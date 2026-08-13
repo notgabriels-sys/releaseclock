@@ -1,0 +1,54 @@
+# Generic example only. Replace every value with facts for one release.
+
+[release]
+artist = "Example Artist"
+title = "Example Release"
+release_date = "2026-10-23"
+timezone = "Europe/Berlin"
+requirements_basis = "Provisional internal campaign plan; manually confirm every external action."
+
+[[milestones]]
+id = "metadata-review"
+offset_days = -42
+title = "Review the declared metadata sheet"
+owner = "Artist / label"
+status = "planned"
+critical = true
+evidence_next_step = "Read the current local metadata sheet and note unresolved fields."
+notes = "This is a review task only; it does not upload or change metadata anywhere."
+
+[[milestones]]
+id = "asset-review"
+offset_days = -28
+title = "Review artwork and delivery assets"
+owner = "Artist / label"
+status = "planned"
+critical = true
+evidence_next_step = "Review the intended approved local assets and any delivery requirements."
+
+[[milestones]]
+id = "campaign-brief"
+offset_days = -21
+title = "Review the campaign brief and intended recipients"
+owner = "Label"
+status = "planned"
+critical = false
+evidence_next_step = "Write or revise the brief before any separate outreach action."
+
+[[milestones]]
+id = "release-day-review"
+offset_days = 0
+title = "Review release-day actions against live evidence"
+owner = "Artist / label"
+status = "planned"
+critical = true
+evidence_next_step = "Verify saved platform state and intended public pages separately."
+
+[[milestones]]
+id = "post-release-review"
+offset_days = 14
+title = "Write a post-release review"
+owner = "Artist / label"
+status = "planned"
+critical = false
+evidence_next_step = "Record observed outcomes and decisions for the next release."
